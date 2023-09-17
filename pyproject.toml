@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "guess-changbin"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+#packages = [{include = "guess_changbin"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-telegram-bot = {extras = ["callback-data"], version = "^20.5"}
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+guess-changbin = "guess_changbin.main:run"
